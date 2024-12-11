@@ -1,16 +1,16 @@
-site_name: HomeLab Documentation
+site_name: HomeLab Doc
 site_description: Documentation for my HomeLab
-site_url: https://docs.james-hackett.ie/
+site_url: https://rem1mid.github.io/
 
-repo_name: DistroByte/docs
-repo_url: https://github.com/DistroByte/docs
+repo_name: rem1mid/rem1mid.github.io
+repo_url: https://github.com/rem1mid/rem1mid.github.io
 
 theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   name: material
   # custom_dir: overrides
-
+  
   features:
     - content.code.annotate
     - navigation.expand
@@ -21,10 +21,10 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-
+    
   include_search_page: false
   search_index_only: true
-
+  
   palette:
     - scheme: default
       primary: indigo
@@ -38,20 +38,12 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
-
+        
   shortcuts:
     help: 191 # ?
     next: 78 # n
     previous: 80 # p
     search: 83 # s
-
-  nav_style: light
-
-  plugins:
-    - search
-    - minify:
-      minify_html: true
-    - git-revision-date
 
 plugins:
   - material-plausible
@@ -98,43 +90,33 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
+  
 nav:
   - Home: index.md
   - Procedures: procedures.md
   - Services:
-      - Services: services/index.md
-      - HedgeDoc: services/hedgedoc.md
-      - DDClient: services/ddclient.md
-      - Media: services/media.md
-      - Paperless: services/paperless.md
-      - Unifi-Controller: services/unifi-controller.md
-      - Fileshare: services/fileshare.md
+      - Services: services/index.md   
+      - Portainer: services/portainer.md
+      - Plex: services/plex.md
+      - Factorio: services/factorio.md
+      - Atsumeru: services/atsumeru.md
   - Hardware:
       - Device List: hardware/device-list.md
-      - PC: hardware/pc.md
-      - Dell OptiPlex 7040: hardware/optiplex-7040.md
-      - Synology DS920+: hardware/synology-nas.md
-      - Raspberry Pi: hardware/raspberry-pi.md
-      - Laptop: hardware/laptop.md
-      - Ubiquiti Switch: hardware/switch.md
-  - Images:
-      - images/index.md
-  - Todo: todo.md
-
+      - PC: hardware/zephyrus.md
+      - Dell-Desktop: hardware/dell-desktop.md
+      - Laptop: hardware/no-screen-laptop.md
+  - Future_Projects: future_projects.md
+  
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/DistroByte
+      link: https://github.com/rem1mid
       name: Find me on GitHub!
     - icon: fontawesome/solid/paper-plane
-      link: mailto:jamesthackett1@gmail.com
+      link: mailto:midouinr@gmail.com
       name: Send me an email!
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/james-t-hackett/
+      link: http://www.linkedin.com/in/remus-midouin-000
       name: Connect with me on LinkedIn
-  analytics:
-    provider: plausible
-    domain: docs.james-hackett.ie
-    src: "https://plausible.dbyte.xyz/js/script.js"
+
