@@ -1,0 +1,122 @@
+site_name: HomeLab Doc
+site_description: Documentation for my HomeLab
+site_url: https://rem1mid.github.io/
+
+repo_name: rem1mid/rem1mid.github.io
+repo_url: https://github.com/rem1mid/rem1mid.github.io
+
+theme:
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  name: material
+  # custom_dir: overrides
+  
+  features:
+    - content.code.annotate
+    - navigation.expand
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    
+  include_search_page: false
+  search_index_only: true
+  
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+        
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+
+plugins:
+  - material-plausible
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: ⚓︎
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+nav:
+  - Home: index.md
+  - Procedures: procedures.md
+  - Services:
+      - Services: services/index.md   
+      - Portainer: services/portainer.md
+      - Plex: services/plex.md
+      - Factorio: services/factorio.md
+      - Atsumeru: services/atsumeru.md
+  - Hardware:
+      - Device List: hardware/device-list.md
+      - PC: hardware/zephyrus.md
+      - Dell-Desktop: hardware/dell-desktop.md
+      - Laptop: hardware/no-screen-laptop.md
+  - Future_Projects: future_projects.md
+  
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rem1mid
+      name: Find me on GitHub!
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:midouinr@gmail.com
+      name: Send me an email!
+    - icon: fontawesome/brands/linkedin
+      link: http://www.linkedin.com/in/remus-midouin-000
+      name: Connect with me on LinkedIn
+
